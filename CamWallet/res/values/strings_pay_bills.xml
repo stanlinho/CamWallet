@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bills_merchants">
+        <item >Electric Company</item>
+        <item >Water Company</item>
+        <item >Gas Company</item>
+        <item >Railroad</item>
+    </string-array>
+    
+</resources>

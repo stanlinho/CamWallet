@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pressed">#ffc425</color>
+    <color name="green">#27ae61</color>
+	<color name="black">#000000</color>
+    <color name="blue">#18c888</color>
+    <color name="blue_light">#43a2e5</color>
+    <color name="action_bar_green">#00b27e</color>
+    <color name="background_grey">#d0d0d0</color>
+    <color name="background_darkgrey">#bbbbbb</color>
+    <color name="emphasis_red">#e84d3b</color>
+    <color name="text_grey">#818181</color>
+    <color name="background_lightgrey">#dcdcdc</color>
+    <color name="white">#ffffff</color>
+    <color name="green_border">#00b070</color>
+    <color name="light_gray">#E6E6E6</color>
+    
+</resources>

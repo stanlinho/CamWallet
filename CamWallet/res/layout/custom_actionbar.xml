@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:weightSum="1"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_weight="1" 
+        android:layout_height="wrap_content"
+        android:layout_width="0dip" >
+
+        <ImageView
+            android:id="@+id/actionBarLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:longClickable="false"
+            android:paddingLeft="15dp"
+            android:src="@drawable/ewallet_title" />
+</RelativeLayout>
+    
+    <Button
+        android:id="@+id/action_logout"
+        style="@style/BlueButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="Logout"
+        android:visibility="gone" />
+
+    <!-- <Button
+        android:id="@+id/actionbar_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" 
+        android:visibility="gone" />  -->
+
+</LinearLayout>

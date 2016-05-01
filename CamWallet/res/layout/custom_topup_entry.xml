@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:padding="10dp" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" 
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Date"
+                android:textAppearance="@style/TextAppearanceTableEntry"/>
+
+            <TextView
+                android:id="@+id/entry_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Small Text"
+                android:textAppearance="@style/TextAppearanceTableEntry" />
+
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" 
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Amount"
+                android:textAppearance="@style/TextAppearanceTableEntry"/>
+
+            <TextView
+                android:id="@+id/entry_fullname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Small Text"
+                android:textAppearance="@style/TextAppearanceTableEntry" />
+
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/entry_row_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" 
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Status"
+                android:textAppearance="@style/TextAppearanceTableEntry" />
+
+            <TextView
+                android:id="@+id/entry_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Small Text"
+                android:textAppearance="@style/TextAppearanceTableEntry" />
+
+        </TableRow>
+        
+        <LinearLayout
+           android:id="@+id/entry_topup_buttons"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="3dp"
+           android:weightSum="1"
+           android:orientation="vertical"
+           android:visibility="gone"
+           android:gravity="center" >
+
+           <Button
+               style="@style/BlueButtons"
+               android:id="@+id/entry_recheck"
+               android:layout_height="wrap_content"
+               android:layout_width="fill_parent"
+               android:layout_margin="10dp"
+               android:text="Recheck Payment Status"/>
+           
+           <Button
+               style="@style/BlueButtons"
+               android:id="@+id/entry_cancel"
+               android:layout_height="wrap_content"
+               android:layout_width="fill_parent"
+               android:layout_margin="10dp"
+               android:text="Cancel Transfer" />
+       </LinearLayout>
+		
+    </TableLayout>
+
+</LinearLayout>

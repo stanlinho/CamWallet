@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CamWallet</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_reload_phone">ReloadPhone</string>
+    <string name="title_activity_pay_bills">Pay Bills</string>
+    <string name="title_activity_transfer_funds">Transfer Funds</string>
+    <string name="title_activity_topup">Top up</string>
+    <string name="lorem_ipsum">Welcome to the Fingerprint ID EWallet Prototype.</string>
+    <string name="error_invalid_details">The account details are invalid</string>
+    <string name="title_activity_history">History</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_radial_menu">Radial Menu</string>
+    <string name="title_activity_change_pin">Change Pin</string>
+    <string name="title_activity_recover_password">Recover Password</string>
+    <string name="title_activity_faq">Fingerprint Scanner</string>
+    <string name="title_activity_promos">Reset Application</string>
+    <string name="title_activity_contact">Contact</string>
+    <string name="title_activity_partners">Partners</string>
+    <string name="title_activity_change_info">Change Info</string>
+    <string name="title_activity_change_email">Change Email</string>
+    <string name="title_activity_create_invoice">Create Invoice</string>
+    <string name="title_activity_beam">Beam</string>
+    <string name="title_activity_main_wallet">Main Wallet</string>
+    <string name="title_activity_member_history">Member History</string>
+    <string name="title_activity_member_profile">Member Profile</string>
+    <string name="title_activity_member_message">Member Message</string>
+    <string name="title_activity_member_transfer">Member Transfer</string>
+    <string name="title_activity_member_receive">Member Receive</string>
+    <string name="title_activity_tabbed_history">Tabbed History</string>
+    <string name="title_activity_authorize_invoice">Authorize Invoice</string>
+    <string name="title_activity_new_member">New Member</string>
+    <string name="error">Tap to refresh</string>
+    <string name="security_question_one">Security Question 1</string>
+    <string name="security_question_two">Security Question 2</string>
+    <string name="answer">Answer</string>
+    <string name="username">Username:</string>
+    <string name="email">Email:</string>
+    <string name="cellphone">Cellphone No.:</string>
+    <string name="wallet">Wallet No.</string>
+    <string name="full_name">Full Name:</string>
+    <string name="birthday">Birthday:</string>
+    <string name="gender">Gender:</string>
+    <string name="faq_screen_title_txt">Frequently Asked Qestions Screen</string>
+
+</resources>

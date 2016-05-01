@@ -1,0 +1,226 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nextixsystems.ewalletv2.LoginActivity" 
+    android:animateLayoutChanges="true" >
+
+    <!-- Login progress -->
+
+    <LinearLayout
+        android:id="@+id/invoice_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/background_grey"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone"
+    	android:animateLayoutChanges="true" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/invoice_status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Processing your transaction"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <!-- change the string resource -->
+    </LinearLayout>
+    
+    <!-- Topup layout -->
+
+	<LinearLayout
+	    android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    	android:animateLayoutChanges="true" >
+	    <LinearLayout
+	        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:weightSum="1"
+            android:orientation="vertical" 
+            android:background="@color/background_lightgrey">
+	        
+	        <TextView
+	            android:id="@+id/invoice_title"
+	            style="@style/TextAppearanceTitle"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="10dp"
+	            android:padding="0dp"
+	            android:text="Create Invoice" />
+
+	        <TextView
+	            android:id="@+id/invoice_subtitle"
+	            style="@style/TextAppearanceTableEntry"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="20dp"
+	            android:padding="0dp"
+	            android:text="Enter the amount to bill" />
+
+	    </LinearLayout>
+	    
+	    <TableLayout
+		    android:id="@+id/invoice_form"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:paddingBottom="@dimen/activity_vertical_margin"
+		    android:paddingLeft="@dimen/activity_horizontal_margin"
+		    android:paddingRight="@dimen/activity_horizontal_margin"
+		    android:paddingTop="@dimen/activity_vertical_margin"
+	        android:background="@color/background_grey" >
+		    
+		    <LinearLayout
+		        android:id="@+id/invoice_edits"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:weightSum="1" >
+		
+		        <EditText
+		            android:id="@+id/invoice_edit_amount"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:ems="10"
+		            android:hint="Amount"
+		            android:inputType="numberDecimal">
+
+		            <requestFocus />
+		        </EditText>
+		        
+		        <EditText
+		            android:id="@+id/invoice_edit_description"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:ems="10"
+		            android:hint="Description (optional)"
+		            android:inputType="textMultiLine"
+		            android:lines="3"
+		            android:gravity="left" >
+
+		        </EditText>
+		
+		    </LinearLayout>
+		
+		    <TableLayout
+		        android:id="@+id/invoice_texts"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:weightSum="1" 
+		        android:visibility="gone" >
+		        
+		        <TableRow
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:weightSum="1" >
+		            <TextView
+			            android:layout_width="0dp"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="0.4"
+			            android:ems="10"
+			            android:text="Amount"
+			            android:padding="8dp"
+			            android:textAppearance="?android:attr/textAppearanceMedium" >
+
+		        	</TextView>
+		        	
+		        	<TextView
+			            android:id="@+id/invoice_text_amount"
+			            android:layout_width="0dp"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="0.6"
+			            android:ems="10"
+			            android:text="Amount"
+			            android:padding="8dp"
+			            android:textAppearance="?android:attr/textAppearanceMedium" >
+
+		        	</TextView>
+		        </TableRow>
+		        
+		        <TableRow
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:weightSum="1" >
+		        	
+		            <TextView
+			            android:layout_width="0dp"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="0.4"
+			            android:ems="10"
+			            android:text="Description"
+			            android:padding="8dp"
+			            android:textAppearance="?android:attr/textAppearanceMedium" >
+
+		        	</TextView>
+		        	
+		            <TextView
+			            android:id="@+id/invoice_text_description"
+			            android:layout_width="0dp"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="0.6"
+			            android:ems="10"
+			            android:gravity="left"
+			            android:hint="Description (optional)"
+			            android:lines="3"
+			            android:padding="8dp"
+			            android:textAppearance="?android:attr/textAppearanceMedium" >
+
+		        	</TextView>
+		        </TableRow>
+		    </TableLayout>
+		    
+		    <TableRow
+		        android:id="@+id/invoice_row_submit"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:weightSum="1" >
+		
+		        <Button
+		            android:id="@+id/invoice_submit"
+		            style="@style/BlueButtons"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="10dp"
+		            android:text="Create Invoice" />
+		
+		    </TableRow>
+		    
+		    <TableRow
+		        android:id="@+id/invoice_row_clear"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:weightSum="1" 
+		        android:visibility="gone" >
+		
+		        <Button
+		            android:id="@+id/invoice_clear"
+		            style="@style/BlueButtons"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="10dp"
+		            android:text="Clear Invoice" />
+		
+		    </TableRow>
+		
+		</TableLayout>
+	    
+	</LinearLayout>
+	
+	
+</merge>

@@ -1,0 +1,101 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_grey" 
+    tools:context="${relativePackage}.${activityClass}" 
+    android:animateLayoutChanges="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/topup_icon"
+            android:layout_width="@dimen/image_medium"
+            android:layout_height="@dimen/image_medium"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/icon_fundstransfer" />
+
+        <TextView
+            android:id="@+id/transfer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/topup_icon"
+            android:text="Pay Invoice"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/transfer_funds_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:animateLayoutChanges="true"
+        android:background="@color/blue"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/authorize_invoice_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_toRightOf="@+id/transfer_profile"
+            android:ems="10"
+            android:text="Username"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageView
+            android:id="@+id/transfer_profile"
+            android:layout_width="@dimen/image_medium_large"
+            android:layout_height="@dimen/image_medium_large"
+            android:layout_alignTop="@+id/authorize_invoice_user"
+            android:src="@drawable/icon_partners" />
+
+        <TextView
+            android:id="@+id/authorize_invoice_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/authorize_invoice_user"
+            android:layout_below="@+id/authorize_invoice_user"
+            android:text="Full Name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/authorize_invoice_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/transfer_profile"
+            android:layout_alignLeft="@+id/authorize_invoice_name"
+            android:text="email"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/authorize_invoice_stream"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="securebluetoothstream"
+        android:visibility="gone" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/authorize_invoice_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sendText"
+        android:visibility="gone" />
+
+</LinearLayout>

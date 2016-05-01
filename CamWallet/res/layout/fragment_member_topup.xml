@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nextixsystems.ewalletv2.LoginActivity" 
+    android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:padding="1dp" >
+
+        <ImageView
+            android:id="@+id/topup_icon"
+            android:layout_width="@dimen/image_medium"
+            android:layout_height="@dimen/image_medium"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/icon_topup" />
+
+        <TextView
+            android:id="@+id/transfer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/topup_icon"
+            android:text="Make Payment"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+    
+    <TableLayout
+        android:id="@+id/topup_form"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background_grey"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+	    
+	    <TableRow
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:weightSum="1" >
+	
+	        <EditText
+	            android:id="@+id/topup_amount"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:ems="10"
+	            android:hint="Amount"
+	            android:inputType="numberDecimal" />"
+	
+	    </TableRow>
+	
+	    <TableRow
+	        android:id="@+id/tableRow6"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:weightSum="1" >
+	
+	        <Button
+	            android:id="@+id/topup_submit"
+	            style="@style/BigButtons"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="10dp"
+	            android:text="Pay Now" />
+	
+	    </TableRow>
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+
+	        <TextView
+	            android:id="@+id/TextView01"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:text="Please bring your device within range of the POS and click the pay button"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textColor="@color/text_grey" />
+	    </LinearLayout>
+
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:maxHeight="@dimen/button_normal_height"
+	        android:maxWidth="@dimen/button_normal_width"
+	        android:src="@drawable/nfc_mark" />
+	
+	</TableLayout>
+    
+</LinearLayout>

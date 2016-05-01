@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="telco_carriers"><item >Globelines</item>
+        <item >Smart</item>
+        <item >Sun Cellular</item>
+        
+    </string-array>
+    <integer-array name="load_amount">
+        <item >50</item>
+        <item >100</item>
+        <item >200</item>
+        <item >500</item>
+    </integer-array>
+    <string-array name="reload_products">
+        <item >Piso Test|ZTEST1</item>
+    </string-array>
+    
+</resources>
